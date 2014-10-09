@@ -1,0 +1,3 @@
+[submodule "weaver_dice"]
+	path = weaver_dice
+	url = git@github.com:Eluvatar/weaver_dice.git
