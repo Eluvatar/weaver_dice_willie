@@ -41,6 +41,23 @@ Character
     for card in creation.character():
         card_reply(bot, card)
 
+@willie.module.commands('cauldron','deviation','deviate')
+def character(bot, trigger):
+    """
+Generates deviations for a Weaver Dice Cauldron Cape
+    """
+    try:
+        adjustment, roll = map(int, trigger.group(2).split(','))
+    except:
+        try:
+            adjustment = int(trigger.group(2))
+        except:
+            bot.reply("You must provide an adjustment for the deviation roll!")
+            return
+        roll = None
+    for line in creation.cauldron(adjustment, roll):
+        card_reply(bot, line)
+
 @willie.module.commands('advantage','adv')
 @tarot(creation.advantage)
 def advantage(bot, card):
