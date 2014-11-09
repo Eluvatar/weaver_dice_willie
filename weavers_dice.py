@@ -42,7 +42,7 @@ Character
         card_reply(bot, card)
 
 @willie.module.commands('cauldron','deviation','deviate')
-def character(bot, trigger):
+def cauldron(bot, trigger):
     """
 Generates deviations for a Weaver Dice Cauldron Cape
     """
