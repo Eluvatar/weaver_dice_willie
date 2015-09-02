@@ -2,6 +2,8 @@
 """
 tell.py - Willie Tell and Ask Module
 Copyright 2008, Sean B. Palmer, inamidst.com
+Copyright 2015, Teller, #WeaversDice on irc.darklordpotter.net
+Modified by 
 Licensed under the Eiffel Forum License 2.
 
 http://willie.dftba.net
